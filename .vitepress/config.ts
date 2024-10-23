@@ -134,12 +134,10 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: 'github', link: githubRepoLink },
-      { icon: 'discord', link: discordLink },
     ],
     footer: {
-      message: '用 <span style="color: #e25555;">&#9829;</span> 撰写',
-      copyright:
-        '<a class="footer-cc-link" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> © 2022-PRESENT Nólëbase 的创作者们',
+      message: '2024 - future',
+      copyright: '我在练习生活',
     },
     search: {
       provider: 'local',
@@ -208,9 +206,34 @@ export default defineConfig({
       },
     },
     nav: [
-      { text: '主页', link: '/' },
-      { text: '笔记', link: '/笔记/' },
-      { text: '最近更新', link: '/toc' },
+      { text: 'Home', link: '/' },
+      // { text: 'Examples', link: '/markdown-examples' },
+      {
+        text: 'Blog',
+        items: [
+          {
+            text: 'Blog Home',
+            link: '/blogs/',
+            activeMatch: '/blogs/$',
+          },
+          {
+            text: 'Tags',
+            link: '/blogs/tags',
+            activeMatch: '/blogs/tags',
+          },
+          {
+            text: 'Archives',
+            link: '/blogs/archives',
+            activeMatch: '/blogs/archives',
+          },
+          // {
+          //   text: 'RSS Feed',
+          //   link: '/blog/feed.rss',
+          // },
+        ],
+      },
+      { text: 'About', link: '/blogs/zhangxin' },
+
     ],
     sidebar,
   },
