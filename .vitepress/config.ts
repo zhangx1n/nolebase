@@ -130,14 +130,14 @@ export default defineConfig({
     darkModeSwitchLabel: 'Toggle Theme',
     editLink: {
       pattern: `${githubRepoLink}/tree/main/:path`,
-      text: '编辑本页面',
+      text: 'Edit this page',
     },
     socialLinks: [
       { icon: 'github', link: githubRepoLink },
     ],
     footer: {
       message: '2024 - future',
-      copyright: '我在练习生活',
+      copyright: '祝你天天开心',
     },
     search: {
       provider: 'local',
@@ -214,17 +214,17 @@ export default defineConfig({
           {
             text: 'Blog Home',
             link: '/blogs/',
-            activeMatch: '/blogs/$',
+            // activeMatch: '/blogs/$',
           },
           {
             text: 'Tags',
             link: '/blogs/tags',
-            activeMatch: '/blogs/tags',
+            // activeMatch: '/blogs/tags',
           },
           {
             text: 'Archives',
             link: '/blogs/archives',
-            activeMatch: '/blogs/archives',
+            // activeMatch: '/blogs/archives',
           },
           // {
           //   text: 'RSS Feed',

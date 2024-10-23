@@ -9,7 +9,7 @@ titleTemplate: 记录技术与生活
 hero:
   name: ZhangXin
   text: 记录技术与生活
-  tagline: code for fun
+  tagline: Code for Fun
   image:
     src: /128x128_indexhead.png
     alt: ZhangXin
