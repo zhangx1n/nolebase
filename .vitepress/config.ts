@@ -9,7 +9,7 @@ import { buildEndGenerateOpenGraphImages } from '@nolebase/vitepress-plugin-og-i
 import { UnlazyImages } from '@nolebase/markdown-it-unlazy-img'
 
 import { discordLink, githubRepoLink, siteDescription, siteName, targetDomain } from '../metadata'
-// import { creatorNames, creatorUsernames } from './creators'
+import { creatorNames, creatorUsernames } from './creators'
 import { sidebar } from './docsMetadata.json'
 
 export default defineConfig({
@@ -130,7 +130,7 @@ export default defineConfig({
     darkModeSwitchLabel: 'Toggle Theme',
     editLink: {
       pattern: `${githubRepoLink}/tree/main/:path`,
-      text: 'Edit This Page',
+      text: '编辑本页面',
     },
     socialLinks: [
       { icon: 'github', link: githubRepoLink },
